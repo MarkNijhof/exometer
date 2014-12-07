@@ -7,7 +7,8 @@ DIALYZER_APPS = erts kernel stdlib compiler syntax_tools snmp ssl ssh \
 		lager goldrush afunix netlink folsom exo mnesia parse_trans \
 		setup
 
-all: deps compile xref test
+all: deps compile xref
+#all: deps compile xref test
 
 ci: compile xref test
 
